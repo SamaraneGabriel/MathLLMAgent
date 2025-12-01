@@ -12,6 +12,7 @@ A aplicação é divida em _src_ e _service_. O objetivo desta divisão é garan
 
 ## Variáveis de Ambiente
 OLLAMA_MODEL = nome do modelo
+
 OLLAMA_PORT  = porta do servidor Ollama
 
 ## Execução Local
