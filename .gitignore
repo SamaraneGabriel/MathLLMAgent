@@ -1,0 +1,15 @@
+# Virtual Environment
+math_agent
+
+# Environment Variables
+.env
+
+# Python Cache
+__pycache__/
+*.pyc
+*.pyo
+
+
+# Notebooks
+*.ipynb
+.ipynb_checkpoints

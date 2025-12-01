@@ -2,8 +2,10 @@ from strands import tool
 import numexpr as ne
 
 
+
+
 @tool
-def calculator_tool(user_query: str) -> int | float:
+def calculator_tool(user_query: str) -> str:
     """
     Tool para avaliar expressões matemáticas utilizando a biblioteca numexpr.
 
@@ -33,7 +35,7 @@ def calculator_tool(user_query: str) -> int | float:
     - Padroniza automaticamente entradas comuns do usuário (como '^' para '**', 'x' para '*', vírgulas como separadores decimais)  
     - Avalia a expressão de forma segura usando numexpr, evitando o uso de eval direto  
     - Retorna o valor final como float ou int, sempre que possível  
-    - Use esta tool apenas para cálculos matemáticos; não tente consultar produtos, estoque ou informações externas  
+    - Use esta tool apenas para cálculos matemáticos
 
     Args:
         expression: A expressão matemática a ser avaliada (string)
@@ -42,8 +44,7 @@ def calculator_tool(user_query: str) -> int | float:
     Returns:
         O valor numérico resultante da avaliação da expressão
     """
-    print("Resposta da expressão: ", ne.eveluate(user_query))
-    return ne.eveluate(user_query)
+    return "O resultado da expressão é: " + ne.eveluate(user_query)
     
 
 
